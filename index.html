@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+    <title>ToDo List</title>
+  </head>
+  <body>
+    <section class="wrapper">
+      <h1>TO-DO LIST</h1>
+      <div class="" id="buttons">
+        <button>Sign Up</button>
+        <button>Log In</button>
+      </div>
+
+      <div class="" id="sign-in">
+        <h3>Sign up</h3>
+        <form id="formSignup"">
+          <div class="form-field">
+            <input type="text" id="fname" name="fname" placeholder="First Name" required/>
+          </div>
+          <div class="form-field">
+            <input type="text" id="lname" name="lname" placeholder="Last Name" required/>
+          </div>
+          <div class="form-field">
+            <input type="text" id="email" name="email" placeholder="Email"required/>
+          </div>
+          <div class="form-field">
+            <input type="password" id="password" name="password" placeholder="Password" required/>
+          </div>
+          <div class="form-field" id="check-box">
+            <input type="checkbox" id="terms" name="terms" />
+            <label class="label-inline">I agree to the Terms of Use</label>
+          </div>
+          <div class="form-field">
+            <button type="submit" class="btn">Sign up</button>
+            <button type="button" class="btn" id="btnBackSignup">Back</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="hide" id="login">
+        <h3>Log in</h3>
+        <form class="" id="formLogin" method="post">       
+            <div class="form-field" id="email-box">
+                <input type="text" name="email" id="loginEmail" placeholder="Email"/>
+            </div>
+            <div class="form-field">
+                <input type="password" name="password" id="loginPassword" placeholder="Password"/>
+            </div>
+            <div class="form-field">
+                <button type="submit" class="btn">Log in</button>
+                <button type="button" class="btn" id="btnBackLogin">Back</button>
+            </div>
+        </form>
+    </div>
+    
+    <div class="hide" id="dashboard" >
+      <h2>dashboard WORKSSSSS</h2>
+    </div>
+
+    </section>
+  </body>
+</html>

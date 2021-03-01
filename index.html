@@ -7,26 +7,25 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
     <link
       href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
       rel="stylesheet"
     />
-    <script src="script.js"></script>
     <title>ToDo List</title>
   </head>
   <body>
     <section class="wrapper">
       <h1>TO-DO LIST</h1>
       <div class="" id="buttons">
-        <button>Sign Up</button>
-        <button>Log In</button>
+        <button onclick="signUpButton()">Sign Up</button>
+        <button onclick="logInButton()">Log In</button>
       </div>
 
-      <div class="" id="sign-in">
+      <div class="hide" id="sign-in">
         <h3>Sign up</h3>
-        <form id="formSignup"">
+        <form id="formSignup">
           <div class="form-field">
             <input type="text" id="fname" name="fname" placeholder="First Name" required/>
           </div>
@@ -44,8 +43,8 @@
             <label class="label-inline">I agree to the Terms of Use</label>
           </div>
           <div class="form-field">
-            <button type="submit" class="btn">Sign up</button>
-            <button type="button" class="btn" id="btnBackSignup">Back</button>
+            <button type="button"  onclick="signUp()" id="submitButton" class="btn">Sign up</button>
+            <button type="button" onclick="goBack()" class="btn" id="btnBackSignup">Back</button>
           </div>
         </form>
       </div>
@@ -54,14 +53,14 @@
         <h3>Log in</h3>
         <form class="" id="formLogin" method="post">       
             <div class="form-field" id="email-box">
-                <input type="text" name="email" id="loginEmail" placeholder="Email"/>
+                <input type="text" name="email" id="inputEmail" placeholder="Email"/>
             </div>
             <div class="form-field">
                 <input type="password" name="password" id="loginPassword" placeholder="Password"/>
             </div>
             <div class="form-field">
-                <button type="submit" class="btn">Log in</button>
-                <button type="button" class="btn" id="btnBackLogin">Back</button>
+                <button type="button" id="loginButton" class="btn">Log in</button>
+                <button type="button" onclick="goBack()" class="btn" id="btnBackLogin">Back</button>
             </div>
         </form>
     </div>
@@ -71,5 +70,6 @@
     </div>
 
     </section>
+    <script src="script.js"></script>
   </body>
 </html>

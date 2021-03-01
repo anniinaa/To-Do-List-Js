@@ -1,0 +1,38 @@
+//SignUp form
+// const submitButton = document.getElementById("submitButton");
+// const loginButton = document.getElementById("loginButton");
+
+// //Create users 
+// submitButton.onclick = function () {
+//   const firstName = document.getElementById("fname");
+//   const lastName = document.getElementById("lname");
+//   const inpEmail = document.getElementById("email");
+//   const inpPassword = document.getElementById("password");
+
+//   console.log("event");
+//   const fname = firstName.value;
+//   const lname = lastName.value;
+//   const email = inpEmail.value;
+//   const password = inpPassword.value;
+
+//   const newUser = `{ "firstName": "${fname}", "lastName": "${lname}", "email": "${email}", "password": "${password}" }`;
+//   localStorage.setItem(email, newUser);
+// };
+
+// //Log in
+// loginButton.onclick = function () {
+//   const emailInput = document.getElementById("inputEmail");
+//   const inputPassword = document.getElementById("loginPassword");
+//   const email = emailInput.value;
+//   const password = inputPassword.value;
+
+//   const loginUser = localStorage.getItem(email);
+//   const loginPassword = JSON.parse(loginUser.password);
+  
+//   if (loginUser && loginPassword) {
+//     console.log("login successfull", JSON.parse(loginUser));
+//   } else {
+//     console.log("login failed");
+//   }
+
+// };

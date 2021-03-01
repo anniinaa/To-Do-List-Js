@@ -19,6 +19,7 @@
     <section class="wrapper">
       <h1>TO-DO LIST</h1>
       <div class="" id="buttons">
+        <h2 id="selectOption">Please select option</h2>
         <button onclick="signUpButton()">Sign Up</button>
         <button onclick="logInButton()">Log In</button>
       </div>
@@ -59,15 +60,30 @@
                 <input type="password" name="password" id="loginPassword" placeholder="Password"/>
             </div>
             <div class="form-field">
-                <button type="button" id="loginButton" class="btn">Log in</button>
+                <button type="button" onclick="loggedIn()" id="loginButton" class="btn">Log in</button>
                 <button type="button" onclick="goBack()" class="btn" id="btnBackLogin">Back</button>
             </div>
         </form>
     </div>
     
-    <div class="hide" id="dashboard" >
-      <h2>dashboard WORKSSSSS</h2>
-    </div>
+
+  <div id="app">
+      <div class="hide" id="settings">
+          <p>Logged in as <span id="loggedInUser"></span></p>
+          <button class="btn" id="btnDashboard">Dashboard</button>
+          <button class="btn" id="btnAccountSettings">Account settings</button>
+          <button onclick="logOutButton()" class="btn btn-red" id="btnLogout">Log out</button>
+      </div>
+      <div class="clearfix"></div>
+
+      <div class="hide" id="dashboard">
+          <h2>Dashboard</h2>
+          <p class="new-todo">Start creating your first to-do list</p>
+          <button type="button" class="btn" id="btnNewTodoList">Create New to-do List</button>
+          <div class="todo-lists">
+              <h2>Here's your to-do lists</h2>
+          </div>
+   </div>
 
     </section>
     <script src="script.js"></script>

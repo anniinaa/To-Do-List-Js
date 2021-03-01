@@ -17,13 +17,24 @@ body{
 }
 h1{
   font-family: 'Shadows Into Light', cursive;
-  font-size: 30px;
+  font-size: 35px;
   border-radius: 10px;
-  color: rgb(41, 21, 61);
-  text-decoration: solid gray 1px underline;
+  color:  rgb(130, 99, 147);
+  margin-bottom: 15px;
+}
+#selectOption{
+  font-family: 'Shadows Into Light', cursive;
+  font-style: italic;
+  font-weight: 100;
+  letter-spacing: 1px;
+  padding-bottom: 15px;
+
 }
 h3{
-  font-size: 20px;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 100;
   color: rgb(41, 21, 61);
 }
 button{

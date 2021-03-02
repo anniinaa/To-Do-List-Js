@@ -33,7 +33,6 @@ loggedIn = () => {
   accountNav.classList.remove("hide");
 };
 logOutButton = () => {
-  logIn.classList.add('hide')
   accountNav.classList.add('hide')
   buttons.classList.remove("hide");
 }

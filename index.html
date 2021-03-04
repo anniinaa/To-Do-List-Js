@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
     <link
       href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
@@ -16,9 +18,9 @@
     <title>ToDo List</title>
   </head>
   <body>
-    <section class="wrapper">
+  <section class="wrapper">
       <h1>TO-DO LIST</h1>
-      <div class="" id="buttons">
+      <div class="hide" id="buttons">
         <h2 id="selectOption">Please select option</h2>
         <button onclick="signUpButton()">Sign Up</button>
         <button onclick="logInButton()">Log In</button>
@@ -63,15 +65,16 @@
                 <button type="button" onclick="loggedIn()" id="loginButton" class="btn">Log in</button>
                 <button type="button" onclick="goBack()" class="btn" id="btnBackLogin">Back</button>
             </div>
+            <footer><small>email: test.email.com</small></footer>
+            <footer><small>Password: 12345</small></footer>
         </form>
     </div>
     
 
   <div id="app">
-      <div class="hide" id="settings">
-          <p>Logged in as <span id="loggedInUser"></span></p>
-          <button class="btn" id="btnDashboard">Dashboard</button>
-          <button class="btn" id="btnAccountSettings">Account settings</button>
+      <div class="" id="settings">
+          <!-- <p>Logged in as <span id="loggedInUser"></span></p> -->
+          <!-- <button class="btn" id="btnDashboard">Dashboard</button> -->
           <button onclick="logOutButton()" class="btn btn-red" id="btnLogout">Log out</button>
       </div>
       <div class="clearfix"></div>
@@ -83,6 +86,21 @@
           <div class="todo-lists">
               <h2>Here's your to-do lists</h2>
           </div>
+   </div>
+<div class="" id="toDoList">
+    <div class="" id="listItems">
+      <h3 class="list-title">Add Items</h3>
+      <!-- <button class="btn btn-small" id="btnEditTodoList">Edit</button> -->
+      <form class="" id="formTodo" method="post" action="">
+          <div class="form-field">
+              <input type="text" id="todo" name="todo" placeholder="New task"/>
+              <button type="button" id="buttonItem" class="btn">Add</button>
+          </div>
+      </form>
+      <div class="todos" id="outputItem">
+      </div>
+  </div>
+</div>
    </div>
 
     </section>

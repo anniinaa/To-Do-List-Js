@@ -5,9 +5,22 @@ const buttons = document.getElementById("buttons");
 const logIn = document.getElementById("loginButton");
 const accountNav = document.getElementById("settings");
 const logOut = document.getElementById("btnLogout");
+//todos
+const inputItem = document.getElementById("todo");
+const buttonItem = document.getElementById("buttonItem");
+const outputItem = document.getElementById("outputItem");
+const todoElement= document.getElementById("toDoList");
+//todo array
+var todoArr = [];
+let user= {
+  email: "test.email.com",
+  password: "12345"
+}
+const userEmail = document.getElementById("inputEmail");
+const userPass = document.getElementById("loginPassword");
 
 
-
+//hide elements
 showToDoList = signUpButton = () => {
   hideButtons();
   signUpShow.classList.remove("hide");
@@ -28,11 +41,32 @@ hideButtons = () => {
 };
 
 loggedIn = () => {
-  hideButtons();
-  logInShow.classList.add("hide");
-  accountNav.classList.remove("hide");
+  if (userEmail.value == user.email && userPass.value == user.password){
+    hideButtons();
+    logInShow.classList.add("hide");
+    accountNav.classList.remove("hide");
+    todoElement.classList.remove("hide")
+  }
 };
+
 logOutButton = () => {
-  accountNav.classList.add('hide')
+  accountNav.classList.add("hide");
   buttons.classList.remove("hide");
+  todoElement.classList.add("hide")
+};
+//add todo items
+buttonItem.onclick = function () {
+  if (inputItem.value != "") {
+    todoArr.push(inputItem.value);
+    displayTask();
+    inputItem.value="";
+  }
+};
+
+function displayTask(){
+  outputItem.innerHTML = "";
+  for(var i = 0; i < todoArr.length; i++){
+    outputItem.innerHTML += `
+    <div class="element"><input type= "checkbox" id="elemetCheck"/> ${todoArr[i]}</div>`
+  }
 }

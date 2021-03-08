@@ -63,10 +63,18 @@ buttonItem.onclick = function () {
   }
 };
 
+const elemetCheck= document.getElementById('elemetCheck')
+
 function displayTask(){
   outputItem.innerHTML = "";
   for(var i = 0; i < todoArr.length; i++){
     outputItem.innerHTML += `
-    <div class="element"><input type= "checkbox" id="elemetCheck"/> ${todoArr[i]}</div>`
+    <div class="element" ><input type= "checkbox" id="elemetCheck" onclick="onCheck()"/> ${todoArr[i]}</div>`
+  }
+}
+onCheck =() =>{
+  if(true){
+    outputItem.style.textDecorationLine = "line-through";
+
   }
 }
